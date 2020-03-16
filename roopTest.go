@@ -23,3 +23,13 @@ func testRoop() {
 	}
 	fmt.Println("ループのテスト ここまで")
 }
+
+// 可変長引数
+func testRoop2(st string, params ...string) {
+	fmt.Println("ループのテストその2 ここから")
+	for _, p := range params {
+		// Python と同じで、いらない値は _ で捨てる
+		fmt.Println(p)
+	}
+	fmt.Println("ループのテストその2 ここまで")
+}

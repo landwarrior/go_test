@@ -21,5 +21,16 @@ func main() {
 	fmt.Println(d)
 	testCondition()
 	testRoop()
+	testRoop2("a", "b", "c", "d")
+	fmt.Println(normalFunc(3, 5))
 	// success.Main()
+}
+
+func normalFunc(a int, b int) (int, int) {
+	fmt.Println("標準的な関数のテスト ここから")
+	// 普通の関数
+	a2 := a * 2
+	b2 := b * 2
+	fmt.Println("標準的な関数のテスト ここまで（reeturn があるから）")
+	return a2, b2
 }
