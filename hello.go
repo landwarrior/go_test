@@ -23,6 +23,8 @@ func main() {
 	testRoop()
 	testRoop2("a", "b", "c", "d")
 	fmt.Println(normalFunc(3, 5))
+	testStoreFunc()
+	testClosure()
 	// success.Main()
 }
 
